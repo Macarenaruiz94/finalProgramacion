@@ -10,12 +10,23 @@ public class Slot : MonoBehaviour
     public string type;
     public string description;
 
-
     public bool empty;
     public Sprite icon;
 
+    public Transform slotIconGameObject;
+
+    private void Start()
+    {
+        slotIconGameObject = transform.GetChild(0);
+    }
+
     public void UpdateSlot()
     {
-        this.GetComponent<Image>().sprite = icon;
+        slotIconGameObject.GetComponent<Image>().sprite = icon;
+    }
+
+    public void UseItem()
+    {
+
     }
 }
