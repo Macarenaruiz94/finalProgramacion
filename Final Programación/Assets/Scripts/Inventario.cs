@@ -77,8 +77,9 @@ public class Inventario : MonoBehaviour
                     slots[i].GetComponent<Slot>().UpdateSlot();
 
                     slots[i].GetComponent<Slot>().empty = false;
+
+                    return;
                 }
-                return;
             }
         }
     }
