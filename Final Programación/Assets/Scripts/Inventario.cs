@@ -13,6 +13,9 @@ public class Inventario : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+
+
         allSlots = slotContenedor.transform.childCount;
 
         slots = new GameObject[allSlots];
